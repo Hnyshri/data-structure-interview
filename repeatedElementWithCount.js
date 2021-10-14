@@ -27,7 +27,7 @@ function frequencyNumber(arr) {
     }
 }
 
-frequencyNumber([10, 20, 20, 10, 10, 20, 5, 20]);
+// frequencyNumber([10, 20, 20, 10, 10, 20, 5, 20]);
 
 
 //===================================================================
@@ -38,9 +38,21 @@ frequencyNumber([10, 20, 20, 10, 10, 20, 5, 20]);
 // Auxiliary Space : O(n)
 
 function countFreq(arr, n) {
-    let visited = Array.from({ length: n }, (_, i) => false);
+    let visited = Array.from({
+        length: n
+    }, (_, i) => false);
 
-    console.log(visited);
+    // var arr1 = Array.from({
+    //     length: 5 // Create 5 indexes with undefined values
+    // },
+    //     function (v, k, i) { // Run a map function on said indexes using v(alue)[undefined] and k(ey)[0 to 4]
+    //         console.log(v, k, i);
+    //         return k; // Return k(ey) as value for this index
+    //     }
+    // );
+    // console.log(arr1);
+
+    // console.log(visited);
     // Traverse through array elements and count frequencies
     for (let i = 0; i < n; i++) {
 
@@ -62,3 +74,26 @@ function countFreq(arr, n) {
 
 let arr = [10, 20, 20, 10, 10, 20, 5, 20, 20];
 countFreq(arr, arr.length);
+
+
+
+
+// x = Array.from({ length: 5 }, (v, i, k) => k)
+// console.log(x)
+// //Expected output Array(5) [ undefined, undefined, undefined, undefined, undefined ]
+
+// x = Array.from({ length: 5 }, (v, i, k) => v)
+// console.log(x)
+// //Expected output Array(5) [ undefined, undefined, undefined, undefined, undefined ]
+
+// x = Array.from({ length: 5 }, (v, i, k) => i)
+// console.log(x)
+// //Expected output Array(5) [ 0, 1, 2, 3, 4 ]
+
+// x = Array.from({ length: 5 }, () => [])
+// console.log(x)
+// //Expected Output Array(5) [ [], [], [], [], [] ]
+
+// x = Array.from({ length: 5 }, () => { })
+// console.log(x)
+// //Expected Output Array(5) [ undefined, undefined, undefined, undefined, undefined ]
