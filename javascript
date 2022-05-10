@@ -45,3 +45,14 @@ Phase 2 (code Execution)=>
             when function is envoke then Execution context created again
 
 Phase 3 - destory the global Execution context and call stack
+
+
+
+==============================================================================
+
+REPL stands for Read Eval Print Loop and it represents a computer environment like a Windows console or Unix/Linux shell 
+where a command is entered and the system responds with an output in an interactive mode.
+ Node.js or Node comes bundled with a REPL environment.
+
+
+const add = (a,b)=>a+b;
